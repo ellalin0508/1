@@ -1,43 +1,80 @@
+.welcome{
+  font-size: 90px;
+  color:rgb(7, 195, 252);
+  text-align: center;
+  vertical-align: middle;
+  padding: 300px, 500px;
+  font-family: cursive;
+}
+
 body{
-  margin:0;
-  backgrouond: #222;
-  font-family: sans-serif;
-  font-weight: 300;
+ margin:center;
+ backgrouond: #222;
+ font-family: sans-serif;
+ font-weight: 400;
+ font-size: 30px;
 }
 
 .container{
-  margin:0 auto;
-  width:80%;
+ margin:0 auto;
+ width:80%;
 }
 
 header{
-  background: #55d6aa;
+ background-image: url("https://www.ocf.berkeley.edu/~sather/wp-content/uploads/2018/01/food--1200x600.jpg");
+ height: 60%;
 }
 
 hearder::after{
-  content:'';
-  display: table;
-  clear: both;
+ content:'';
+ display: table;
+ clear: both;
 }
 
 .logo{
-  float:left;
-  padding: 10px 0;
+ float:left;
+ padding:0px;
 }
 
 nav{
-  float: right;
+ float: right;
 }
 
 nav ul{
-  margin:0;
-  padding: 0;
-  list-style: none;
+ margin:center;
+ padding: 0;
+ list-style: none;
+
 }
 
-navli{
-  display:inline-block;
-  margin-left: 70px;
-  padding-top: 25px;
-  position: relative;
+nav li{
+ display:inline-block;
+ margin-left: 70px;
+ padding-top: 25px;
+ position: relative;
+}
+
+nav a{
+ text-decoration: none;
+ text-transform: uppercase;
+ font-size: 30px;
+}
+
+nav a:hover{
+color: rgb(204, 65, 6);
+}
+
+nav a::before{
+content:'';
+display:block;
+height:5px;
+width:100%;
+background-color: rgb(244, 24, 86);
+position: absolute;
+top:0;
+width: 0%;
+}
+
+nav a:hover::before{
+width:100%;
 }
