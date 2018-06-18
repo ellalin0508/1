@@ -43,9 +43,10 @@ hearder::after{
 
 
 nav{
- float: right;
  position: sticky;
  background: rgb(200, 218, 247);
+ clear:both;
+
 }
 
 nav ul{
@@ -65,7 +66,7 @@ nav li{
 nav a{
  text-decoration: none;
  text-transform: uppercase;
- font-size: 30px;
+ font-size: 25px;
 }
 
 nav a:hover{
@@ -89,6 +90,46 @@ width:100%;
 
 .logo{
  float: left;
- padding:0px;
+ padding:3px;
  display:flex;
+}
+
+#ABOUT{
+  font-size: 23px;
+  font-size-adjust: auto;
+  font-family: cursive;
+}
+
+.Today{
+  font-family: fantasy;
+  clear:both;
+}
+.special{
+  font-size: 10px;
+}
+
+
+.Popular{
+  font-family: fantasy;
+  clear:both;
+}
+.PopularItems{
+
+}
+
+
+.Fod{
+  font-family: fantasy;
+  clear:both;
+}
+.Foods{
+
+}
+
+.D{
+  font-family: fantasy;
+  clear:both;
+}
+.Drinks{
+
 }
