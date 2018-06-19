@@ -104,8 +104,22 @@ width:100%;
   font-family: fantasy;
   clear:both;
 }
-.special{
-  font-size: 10px;
+#text{
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+#pictures{
+  display: flex;
+  justify-content: space-around;
+}
+#pictures img{
+  width:300px;
+  height: 260px;
+}
+
+tr{
+  width:100%;
 }
 
 
@@ -113,23 +127,13 @@ width:100%;
   font-family: fantasy;
   clear:both;
 }
-.PopularItems{
 
-}
 
 
 .Fod{
   font-family: fantasy;
   clear:both;
-}
-.Foods{
-
-}
 
 .D{
   font-family: fantasy;
   clear:both;
-}
-.Drinks{
-
-}
