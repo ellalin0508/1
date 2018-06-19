@@ -47,10 +47,11 @@
             <img src = "https://www.organicfacts.net/wp-content/uploads/rosetea.jpg">
           </div>
           <div id = "text">
-            <div>Instant Hotpot</div>
-            <div>Spam Musubi</div>
-            <div>Rose tea</div>
+          <div>Instant Hotpot <input type="checkbox" id="instant"  onclick="myFunction()"></div>
+        <div>Spam Musubi <input type="checkbox" id="spam" onclick="afunction()"></div>
+          <div>Rose tea</div>
           </div>
+
       </div>
 
 
@@ -154,8 +155,16 @@
           <div>Rose Tea</div>
           <div>Milk</div>
           <div>Yogurt</div>
+          <div class ='good'>
+            <div class='ok'>
+              <h2>This is YOUR ORDER!</h2>
+            </div>
+            <p id="hotpot" style="display:none">   #Instant Hotpot</p>
+            <p id="musubi" style="display:none">   #Spam Musubi</p>
+          </div>
+
+
         </div>
-      </div>
 
   </body>
 </html>

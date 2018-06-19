@@ -1,7 +1,19 @@
-let in = document.getElementById('in')
+function myFunction() {
+    var checkbox = document.getElementById("instant");
+    var hotpot = document.getElementById("hotpot");
+    if (checkbox.checked == true){
+        hotpot.style.display = "block";
+    } else {
+       hotpot.style.display = "none";
+    }
+}
 
-in.addEventListener('change',function()if(this,checked){
-  order.textContent += 'Instant Hotpot'} else {
-    ''
+function afunction(){
+  var fries = document.getElementById("spam")
+  var friesa =document.getElementById("musubi")
+  if(fries.checked == true){
+    friesa.style.display = "block";
+  }else{
+    friesa.style.display = "none";
   }
-})
+}
