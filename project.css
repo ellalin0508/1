@@ -14,8 +14,10 @@
 header{
  background-image: url("https://www.ocf.berkeley.edu/~sather/wp-content/uploads/2018/01/food--1200x600.jpg");
  height: 60%;
+}
 
-
+#about{
+  font-family: fantasy;
 }
 
 h1{
@@ -101,7 +103,7 @@ width:100%;
   font-family: cursive;
 }
 
-.Today{
+#Today{
   font-family: fantasy;
   clear:both;
 }
@@ -120,7 +122,7 @@ width:100%;
 }
 
 .good {
-  
+
       width: 600px;
       border: 3px double #73AD21;
       justify-content: center;
@@ -139,17 +141,16 @@ tr{
 }
 
 
-.Popular{
+#Popular{
   font-family: fantasy;
   clear:both;
 }
 
-
-
-.Fod{
+#Fod{
   font-family: fantasy;
   clear:both;
 
-.D{
+#drinks{
   font-family: fantasy;
   clear:both;
+}
