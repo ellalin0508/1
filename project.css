@@ -8,6 +8,7 @@
   display:flex;
   justify-content: center;
   align-items: center;
+  text-shadow: 2px 2px white;
 }
 
 header{
