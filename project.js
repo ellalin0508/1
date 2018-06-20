@@ -17,3 +17,11 @@ function afunction(){
     friesa.style.display = "none";
   }
 }
+
+function rofunction(){
+  var rose=document.getElementById("rose")
+  var tea=documnet.getElementById("tea")
+  if(checkbox.checked == true){
+    tea.style.display
+  }
+}
