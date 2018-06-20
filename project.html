@@ -34,13 +34,12 @@
 
   </div>
   <p id ="ABOUT">24-7 is a place where you can find instant food to fill up your hungry tummy. Unlike the other convenience stores, we have some food that can really make you enjoy and feel like you are in a restaurant. Our product and a microwave is all you need to cook a convenient meal for yourself. Here, items like soft drinks or snacks are sold. Hot dogs, sausages, instant noodle, hard boiled tea eggs, and fish cakes can be found in stores. Just like the convenience stores in Korea, here you can DIY your own recipe as well. It's not just a convenience store, it's also a little kitchen for everyone who needs food at anytime. We open 24 hours a day, 7 days a week. What are you waiting for, come and DIY your own food here at 24/7 convenience store! </p>
-    <break>
 
       <div class="Today">
         <h2>Today's Special</h2>
       </div>
 
-      <div class= "Special">
+      <div class= "Today's Special">
           <div id = "pictures">
             <img src = "https://gd.image-gmkt.com/li/461/293/819293461.g_0-w_g.jpg">
             <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC0gRZ-u-HlL7s47gM-kq91Y7pFXlLySSHhdoh_o3kUkdr5LQg"></td>
@@ -51,7 +50,7 @@
         <div>Spam Musubi <input type="checkbox" id="spam" onclick="afunction()"></div>
           <div>Rose Tea<input type="checkbox" id="rose" onclick="rofunction()"></div>
           </div>
-
+<break>
       </div>
 
 
@@ -95,9 +94,9 @@
             <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC0gRZ-u-HlL7s47gM-kq91Y7pFXlLySSHhdoh_o3kUkdr5LQg">
           </div>
           <div id = "text">
-            <div>Rice roll</div>
-            <div>Fried Chicken</div>
-            <div>Spam Musubi</div>
+            <div>Rice Roll<input type="checkbox" id="rice" onclick="rifunction()"></div>
+            <div>Fried Chicken<input type="checkbox" id="fried" onclick="frifunction()"></div>
+            <div>Spam Musubi<input type="checkbox" id="spama" onclick="spamafunction()"></div>
           </div>
           <div id = "pictures">
             <img src = "https://s3-media4.fl.yelpcdn.com/bphoto/A3xFkhAnrb6pdLyf11BVFg/o.jpg">
@@ -105,9 +104,9 @@
             <img src = "http://www.pressonline.rs/sw4i/thumbnail/French-Fries950x350.jpg?thumbId=2207567&fileSize=55528&lastModified=1406138278000&contentType=image/jpeg">
           </div>
           <div id = "text">
-            <div>Icecream</div>
-            <div>Instant Hotpot</div>
-            <div>French Fries</div>
+            <div>Icecream<input type="checkbox" id="icea" onclick="iceafunction()"></div>
+            <div>Instant Hotpot<input type="checkbox" id="instantb" onclick="instantbfunction()"></div>
+            <div>French Fries<input type="checkbox" id="french" onclick="frfunction()"></div>
           </div>
           <div id = "pictures">
             <img src = "http://tiphero.com/wp-content/uploads/2016/10/Baked-Garlic-Popcorn-Chicken.jpg">
@@ -115,9 +114,9 @@
             <img src = "http://homnayangi.vn/wp-content/uploads/2015/10/chaca.pngs_.png">
           </div>
           <div id = "text">
-            <div>Popcorn Chicken</div>
-            <div>Packed meals</div>
-            <div>Fish cakes</div>
+            <div>Popcorn Chicken<input type="checkbox" id="popcorn" onclick="pofunction()"></div>
+            <div>Packed Meals<input type="checkbox" id="packeda" onclick="packedafunction()"></div>
+            <div>Fish Cakes<input type="checkbox" id="fish" onclick="fifunction()"></div>
           </div>
       </div>
 
@@ -125,16 +124,16 @@
       <div class="D">
         <h2>Drinks</h2>
       </div>
-    </div class = "Drinks">
+    <div class = "Drinks">
         <div id = "pictures">
           <img src = "https://target.scene7.com/is/image/Target/12953554?wid=488&hei=488&fmt=pjpeg">
           <img src = "https://www.sciencenews.org/sites/default/files/main/articles/100315_coffee_opener_NEW_0.jpg">
           <img src = "https://i4.ypcdn.com/blob/4ee7587a7e17d2f075062bab46d225005233cd81">
         </div>
         <div id = "text">
-          <div>Water</div>
-          <div>Coffee</div>
-          <div>Milky way</div>
+          <div>Water<input type="checkbox" id="wa" onclick="wafunction()"></div>
+          <div>Coffee<input type="checkbox" id="cof" onclick="cofunction()"></div>
+          <div>Milky Way<input type="checkbox" id="milky" onclick="misfunction()"></div>
         </div>
         <div id = "pictures">
           <img src = "http://www.protidinersangbad.com/assets/news_photos/2016/05/30/image-4715.jpg">
@@ -142,9 +141,9 @@
           <img src = "https://www.inlifehealthcare.com/wp-content/uploads/2017/05/jasmine-tea-466x359.jpg">
         </div>
         <div id = "text">
-          <div>Black Tea</div>
-          <div>Green Tea</div>
-          <div>Jasmine Tea</div>
+          <div>Black Tea<input type="checkbox" id="black" onclick="blfunction()"></div>
+          <div>Green Tea<input type="checkbox" id="green" onclick="grfunction()"></div>
+          <div>Jasmine Tea<input type="checkbox" id="jasmine" onclick="jafunction()"></div>
         </div>
         <div id = "pictures">
           <img src = "https://activatedyou.com/wp-content/uploads/2018/02/5-reasons-to-drink-rose-tea.jpg">
@@ -152,23 +151,41 @@
           <img src = "https://www.foodiewithfamily.com/wp-content/uploads/2017/03/Icelandic-Yogurt.jpg">
         </div>
         <div id = "text">
-          <div>Rose Tea</div>
-          <div>Milk</div>
-          <div>Yogurt</div>
+          <div>Rose Tea<input type="checkbox" id="roseb" onclick="rosebfunction()"></div>
+          <div>Milk<input type="checkbox" id="milka" onclick="milkafunction()"></div>
+          <div>Yogurt<input type="checkbox" id="yo" onclick="yofunction()"></div>
           </div>
           <div class ='good'>
             <div class='ok'>
               <h2>This is YOUR ORDER!</h2>
             </div>
-            <p id="hotpot" style="display:none">   #Instant Hotpot $25</p>
-            <p id="musubi" style="display:none">   #Spam Musubi</p>
+            <p id="hotpot" style="display:none"> #Instant Hotpot $25</p>
+            <p id="musubi" style="display:none"> #Spam Musubi</p>
             <p id="tea" style="display:none"> #Rose Tea</p>
             <p id="noodle" style="display:none"> #Instant Noodle</p>
             <p id="cream" style="display:none"> #Icecream</p>
             <p id="meals" style="display:none"> #Packed Meals</p>
-            <p id="noodlesa" style="display:none"> #Instant Noodles</p>
-            <p id="eggs" style="display:none"> #Boiled Eggs</p>
+            <p id="noodlesa" style="display:none"> #Instant Noodle</p>
+            <p id="eggs" style="display:none"> #Hard-Boiled Eggs</p>
             <p id="sages" style="display:none"> #Sausages</p>
+            <p id="roll" style="display:none"> #Rice Roll</p>
+            <p id="chicken" style="display:none"> #Fried Chicken</p>
+            <p id="musubia" style="display:none"> #Spam Musubi</p>
+            <p id="creama" style="display:none"> #Icecream</p>
+            <p id="hotpotb" style="display:none"> #Instant Hotpot</p>
+            <p id="fries" style="display:none"> #French Fries</p>
+            <p id="chickens" style="display:none"> #Popcorn Chickens</p>
+            <p id="mealsa" style="display:none"> #Packed Meals</p>
+            <p id="cakes" style="display:none"> #Fish Cakes</p>
+            <p id="ter" style="display:none"> #Water</p>
+            <p id="fee" style="display:none"> #Coffee</p>
+            <p id="way" style="display:none"> #Milky Way</p>
+            <p id="teaa" style="display:none"> #Black Tea</p>
+            <p id="teab" style="display:none"> #Green Tea</p>
+            <p id="teac" style="display:none"> #Jasmine Tea</p>
+            <p id="tead" style="display:none"> #Rose Tea</p>
+            <p id="milkd" style="display:none"> #Milk</p>
+            <p id="gurt" style="display:none"> #Yogurt</p>
           </div>
 
 
