@@ -8,13 +8,16 @@
   display:flex;
   justify-content: center;
   align-items: center;
+  text-shadow: 2px 2px white;
 }
 
 header{
  background-image: url("https://www.ocf.berkeley.edu/~sather/wp-content/uploads/2018/01/food--1200x600.jpg");
  height: 60%;
+}
 
-
+#about{
+  font-family: fantasy;
 }
 
 h1{
@@ -105,36 +108,54 @@ width:100%;
   font-family: cursive;
 }
 
-.Today{
+#Today{
   font-family: fantasy;
   clear:both;
 }
-.special{
-  font-size: 10px;
+#text{
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+#pictures{
+  display: flex;
+  justify-content: space-around;
+}
+#pictures img{
+  width:300px;
+  height: 260px;
+}
+
+.good {
+
+      width: 600px;
+      border: 3px double #73AD21;
+      justify-content: center;
+      background: url("https://image.freepik.com/free-vector/sketchy-food-background_23-2147507463.jpg");
+      text-align: center;
+      vertical-align: middle;
+      margin:auto;
+}
+.ok{
+  font-size: 20px;
+  font-family: serif;
+  color:rgb(237, 128, 4);
+}
+tr{
+  width:100%;
 }
 
 
-.Popular{
+#Popular{
   font-family: fantasy;
   clear:both;
 }
-.PopularItems{
 
-}
-
-
-.Fod{
+#Fod{
   font-family: fantasy;
   clear:both;
-}
-.Foods{
 
-}
-
-.D{
+#drinks{
   font-family: fantasy;
   clear:both;
-}
-.Drinks{
-
 }
