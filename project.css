@@ -1,6 +1,11 @@
+body{
+  background-color: #ffb400;
+
+}
+
 .welcome{
   font-size: 90px;
-  color:rgb(7, 195, 252);
+  color:#ffb400;
   text-align: center;
   vertical-align: middle;
   padding: 300px, 500px;
@@ -12,7 +17,7 @@
 }
 
 header{
- background-image: url("https://www.ocf.berkeley.edu/~sather/wp-content/uploads/2018/01/food--1200x600.jpg");
+ background-image: url("http://cp1.douguo.net/upload/caiku/9/a/a/yuan_9a99ba61d0fcfa8ae7ffa689725f439a.jpg");
  height: 60%;
 }
 
@@ -20,11 +25,7 @@ header{
   font-family: fantasy;
 }
 
-h1{
-  font-size: 80px;
-  font-family: sans-serif;
-  color: #222;
-}
+
 
 body{
  backgrouond: #222;
@@ -47,9 +48,10 @@ hearder::after{
 
 nav{
  position: sticky;
- background: rgb(200, 218, 247);
+ background: #ffb400;
  clear:both;
-
+ color: red;
+ position: fixed;
 }
 
 nav ul{
@@ -61,15 +63,16 @@ nav ul{
 
 nav li{
  display:inline-block;
- margin-left: 70px;
- padding-top: 25px;
+ margin-left: 41px;
+ margin-right: 41px;
+
  position: relative;
 }
 
 nav a{
  text-decoration: none;
  text-transform: uppercase;
- font-size: 25px;
+ font-size: 21px;
 }
 
 nav a:hover{
@@ -79,7 +82,7 @@ color: rgb(204, 65, 6);
 nav a::before{
 content:'';
 display:block;
-height:5px;
+height:3px;
 width:100%;
 background-color: rgb(244, 24, 86);
 position: absolute;
@@ -93,7 +96,7 @@ width:100%;
 
 .logo{
  float: left;
- padding:3px;
+ padding:5px;
  display:flex;
 }
 
@@ -121,7 +124,7 @@ width:100%;
   height: 260px;
 }
 
-.good {
+#good{
 
       width: 600px;
       border: 3px double #73AD21;
@@ -149,8 +152,9 @@ tr{
 #Fod{
   font-family: fantasy;
   clear:both;
+}
 
-#drinks{
+#Coke{
   font-family: fantasy;
   clear:both;
 }
