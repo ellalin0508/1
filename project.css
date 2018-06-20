@@ -1,0 +1,156 @@
+.welcome{
+  font-size: 90px;
+  color:rgb(7, 195, 252);
+  text-align: center;
+  vertical-align: middle;
+  padding: 300px, 500px;
+  font-family: cursive;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px white;
+}
+
+header{
+ background-image: url("https://www.ocf.berkeley.edu/~sather/wp-content/uploads/2018/01/food--1200x600.jpg");
+ height: 60%;
+}
+
+#about{
+  font-family: fantasy;
+}
+
+h1{
+  font-size: 80px;
+  font-family: sans-serif;
+  color: #222;
+}
+
+body{
+ backgrouond: #222;
+ font-family: sans-serif;
+ font-size: 30px;
+}
+
+.container{
+ margin:0 auto;
+ width:90%;
+}
+
+hearder::after{
+ content:'';
+ display: table;
+ clear: both;
+}
+
+
+
+nav{
+ position: sticky;
+ background: rgb(200, 218, 247);
+ clear:both;
+
+}
+
+nav ul{
+ margin:center;
+ padding: 0;
+ list-style: none;
+
+}
+
+nav li{
+ display:inline-block;
+ margin-left: 70px;
+ padding-top: 25px;
+ position: relative;
+}
+
+nav a{
+ text-decoration: none;
+ text-transform: uppercase;
+ font-size: 25px;
+}
+
+nav a:hover{
+color: rgb(204, 65, 6);
+}
+
+nav a::before{
+content:'';
+display:block;
+height:5px;
+width:100%;
+background-color: rgb(244, 24, 86);
+position: absolute;
+top:0;
+width: 0%;
+}
+
+nav a:hover::before{
+width:100%;
+}
+
+.logo{
+ float: left;
+ padding:3px;
+ display:flex;
+}
+
+#ABOUT{
+  font-size: 23px;
+  font-size-adjust: auto;
+  font-family: cursive;
+}
+
+#Today{
+  font-family: fantasy;
+  clear:both;
+}
+#text{
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+#pictures{
+  display: flex;
+  justify-content: space-around;
+}
+#pictures img{
+  width:300px;
+  height: 260px;
+}
+
+.good {
+
+      width: 600px;
+      border: 3px double #73AD21;
+      justify-content: center;
+      background: url("https://image.freepik.com/free-vector/sketchy-food-background_23-2147507463.jpg");
+      text-align: center;
+      vertical-align: middle;
+      margin:auto;
+}
+.ok{
+  font-size: 20px;
+  font-family: serif;
+  color:rgb(237, 128, 4);
+}
+tr{
+  width:100%;
+}
+
+
+#Popular{
+  font-family: fantasy;
+  clear:both;
+}
+
+#Fod{
+  font-family: fantasy;
+  clear:both;
+
+#drinks{
+  font-family: fantasy;
+  clear:both;
+}
