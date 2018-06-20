@@ -29,9 +29,9 @@ function rofunction(){
 }
 
 function infunction(){
-  var instant =document.getElementById("instant")
+  var instantz =document.getElementById("instantz")
   var noodle =document.getElementById("noodle")
-  if(instant.checked == true){
+  if(instantz.checked == true){
     noodle.style.display = "block";
   }else{
     noodle.style.display = "none";
