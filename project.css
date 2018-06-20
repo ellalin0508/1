@@ -44,14 +44,12 @@ hearder::after{
  clear: both;
 }
 
-
-
 nav{
+ width:100%;
  position: sticky;
- background: #ffb400;
- clear:both;
- color: red;
+ background-color:rgba(255,180,0,0.6);
  position: fixed;
+ padding-left: 10px;
 }
 
 nav ul{
@@ -62,21 +60,21 @@ nav ul{
 }
 
 nav li{
- display:inline-block;
+ display: inline-block;
  margin-left: 41px;
  margin-right: 41px;
-
  position: relative;
 }
 
 nav a{
  text-decoration: none;
+ color: red;
  text-transform: uppercase;
- font-size: 21px;
+ font-size: 18px;
 }
 
 nav a:hover{
-color: rgb(204, 65, 6);
+color: orange;
 }
 
 nav a::before{
@@ -84,7 +82,7 @@ content:'';
 display:block;
 height:3px;
 width:100%;
-background-color: rgb(244, 24, 86);
+background-color: red;
 position: absolute;
 top:0;
 width: 0%;
@@ -93,6 +91,7 @@ width: 0%;
 nav a:hover::before{
 width:100%;
 }
+
 
 .logo{
  float: left;
