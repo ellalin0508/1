@@ -16,6 +16,21 @@ header{
  height: 60%;
 }
 
+#specialorder{
+  margin:auto;
+  text-align: center;
+  height: 3%;
+  overflow: visible;
+  width: 95%;
+  font-size: 70px;
+  margin-top: 47vh;
+  font-family: fantasy;
+  background-image: url("http://www.floridainternationalshipping.com/wp-content/uploads/2012/08/Professionals_Packing.jpg");
+}
+
+.checkout{
+  margin:auto;
+}
 #about{
   font-family: fantasy;
 }
