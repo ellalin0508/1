@@ -2,28 +2,31 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="project.css" type="text/css" rel= "stylesheet"/>
+    <link href="public/project.css" type="text/css" rel= "stylesheet"/>
     <script type="text/javascript" src="project.js"></script>
     <title>247</title>
 
 </head>
   <body>
     <header>
-      <div class = "container">
-        <div class ="welcome">
-          <p>WELCOME TO 24-SEVEN!</p>
-        </div>
-
       <nav>
         <ul>
+
           <li><a href="#about">About</a></li>
           <li><a href="#Today">Today's special</a></li>
           <li><a href="#Popular">Popular Items</a></li>
           <li><a href="#Fod">Foods</a></li>
-          <li><a href="#drinks">Drinks</a></li>
-          <li><a href="Checkout">Checkout</a></li>
+          <li><a href="#Coke">Drinks</a></li>
+          <li><a href="#good">Your Order</a></li>
         </ul>
     </nav>
+      <div class = "container">
+        <div class ="welcome">
+          <p>WELCOME TO 24-SEVEN!</p>
+        </div>
+      </div>
+
+
    </header>
 
 <div id="about">
@@ -69,9 +72,9 @@
           <img src = "https://i0.wp.com/www.gildedgingerbread.com/wp-content/uploads/2017/12/10-Essential-Korean-Foods-to-Impress-Your-Guests-11.jpg?resize=900%2C526&ssl=1">
         </div>
         <div id = "text">
-          <div>Instant Noodle   $1.17</div>
-          <div>Icecream    $2.59</div>
-          <div>Packed meals    $7.89</div>
+          <div>Instant Noodle   <input type="checkbox" id="instant" onclick="infunction()"/>  $1.17</div>
+          <div>Icecream  <input type="checkbox" id="ice" onclick="icfunction()"/>   $2.59</div>
+          <div>Packed Meals   <input type="checkbox" id="packed" onclick="pafunction()"/> $7.89 </div>
 
         </div>
 
@@ -125,7 +128,7 @@
           </div>
       </div>
 
-      <div id="drinks">
+      <div id = "Coke">
         <h2>Drinks</h2>
       </div>
 
@@ -162,7 +165,7 @@
         </div>
 
 
-          <div class ='good'>
+          <div id ="good">
             <div class='ok'>
               <h2>This is YOUR ORDER!</h2>
             </div>
