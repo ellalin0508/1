@@ -9,7 +9,7 @@ body{
   text-align: center;
   vertical-align: middle;
   padding: 300px, 500px;
-  font-family: fantasy;
+  font-family: cursive;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -21,6 +21,21 @@ header{
  height: 60%;
 }
 
+#specialorder{
+  margin:auto;
+  text-align: center;
+  height: 3%;
+  overflow: visible;
+  width: 95%;
+  font-size: 70px;
+  margin-top: 47vh;
+  font-family: fantasy;
+
+}
+
+.checkout{
+  margin:auto;
+}
 #about{
   font-family: fantasy;
 }
@@ -99,13 +114,8 @@ width:100%;
  display:flex;
 }
 
-.about{
-  font-family: fantasy;
-
-}
-
 #ABOUT{
-  font-size: 30px;
+  font-size: 23px;
   font-size-adjust: auto;
   font-family: cursive;
 }
