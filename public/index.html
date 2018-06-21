@@ -6,37 +6,52 @@
     <script type="text/javascript" src="project.js"></script>
     <title>247</title>
 
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCYDxJu9gxi85GyJPYNkTimHE6aaLI37rY",
+    authDomain: "food-store-247.firebaseapp.com",
+    databaseURL: "https://food-store-247.firebaseio.com",
+    projectId: "food-store-247",
+    storageBucket: "food-store-247.appspot.com",
+    messagingSenderId: "751429038636"
+  };
+  firebase.initializeApp(config);
+</script>
+
 </head>
   <body>
     <header>
-      <div class = "container">
-        <div class ="welcome">
-          <p>WELCOME TO 24-SEVEN!</p>
-        </div>
-
       <nav>
         <ul>
-
           <li><a href="#about">About</a></li>
           <li><a href="#Today">Today's special</a></li>
           <li><a href="#Popular">Popular Items</a></li>
           <li><a href="#Fod">Foods</a></li>
-          <li><a href="#drinks">Drinks</a></li>
+          <li><a href="#Coke">Drinks</a></li>
+          <li><a href="#good">Your Order</a></li>
         </ul>
     </nav>
+      <div class = "container">
+        <div class ="welcome">
+          <p>WELCOME TO 24-SEVEN!</p>
+        </div>
+      </div>
+
+
    </header>
 
-<div id="about">
+  <div id="about">
   <h2>About</h2>
-</div>
-
+  </div>
     <div class="logo">
-      <li><img src="http://www.thelogomix.com/files/iagecache/v3-logo-detail/FoodStop_400px_V2.jpg">
+    <img src="http://www.thelogomix.com/files/imagecache/v3-logo-detail/FoodStop_400px_V2.jpg">
     </div>
     <break>
 
   </div>
-  <p id ="ABOUT">24-7 is a place where you can find instant food to fill up your hungry tummy. Unlike the other convenience stores, we have some food that can really make you enjoy and feel like you are in a restaurant. Our product and a microwave is all you need to cook a convenient meal for yourself. Here, items like soft drinks or snacks are sold. Hot dogs, sausages, instant noodle, hard boiled tea eggs, and fish cakes can be found in stores. Just like the convenience stores in Korea, here you can DIY your own recipe as well. It's not just a convenience store, it's also a little kitchen for everyone who needs food at anytime. We open 24 hours a day, 7 days a week. What are you waiting for, come and DIY your own food here at 24/7 convenience store! </p>
+  <p id ="ABOUT">24-SEVEN is a place where you can find instant food to fill up your hungry tummy. Unlike the other convenience stores, we have some food that can really make you enjoy and feel like you are in a restaurant. Our product and a microwave is all you need to cook a convenient meal for yourself. Here, items like soft drinks or snacks are sold. Hot dogs, sausages, instant noodle, hard boiled tea eggs, and fish cakes can be found in stores. Just like the convenience stores in Korea, here you can DIY your own recipe as well. It's not just a convenience store, it's also a little kitchen for everyone who needs food at anytime. We open 24 hours a day, 7 days a week. What are you waiting for, come and DIY your own food here at 24/7 convenience store! </p>
 
       <div id="Today">
         <h2>Today's Special</h2>
@@ -54,7 +69,7 @@
           <div>Rose tea<input type="checkbox" id="rose" onclick="rofunction()">$2.16</div>
 
           </div>
-<break>
+  <break>
       </div>
 
 
@@ -69,7 +84,7 @@
           <img src = "https://i0.wp.com/www.gildedgingerbread.com/wp-content/uploads/2017/12/10-Essential-Korean-Foods-to-Impress-Your-Guests-11.jpg?resize=900%2C526&ssl=1">
         </div>
         <div id = "text">
-          <div>Instant Noodle   <input type="checkbox" id="instant" onclick="infunction()"/>  $1.17</div>
+          <div>Instant Noodle   <input type="checkbox" id="instantyes" onclick="instantyesfunction()"/>  $1.17</div>
           <div>Icecream  <input type="checkbox" id="ice" onclick="icfunction()"/>   $2.59</div>
           <div>Packed Meals   <input type="checkbox" id="packed" onclick="pafunction()"/> $7.89 </div>
 
@@ -125,7 +140,7 @@
           </div>
       </div>
 
-      <div id="drinks">
+      <div id = "Coke">
         <h2>Drinks</h2>
       </div>
 
@@ -162,14 +177,14 @@
         </div>
 
 
-          <div class ='good'>
+          <div id ="good">
             <div class='ok'>
               <h2>This is YOUR ORDER!</h2>
             </div>
             <p id="hotpot" style="display:none"> #Instant Hotpot $25</p>
             <p id="musubi" style="display:none"> #Spam Musubi</p>
             <p id="tea" style="display:none"> #Rose Tea</p>
-            <p id="noodle" style="display:none"> #Instant Noodle</p>
+            <p id="noodleyes" style="display:none"> #Instant Noodle</p>
             <p id="cream" style="display:none"> #Icecream</p>
             <p id="meals" style="display:none"> #Packed Meals</p>
             <p id="noodlesa" style="display:none"> #Instant Noodle</p>
@@ -193,29 +208,11 @@
             <p id="tead" style="display:none"> #Rose Tea</p>
             <p id="milkd" style="display:none"> #Milk</p>
             <p id="gurt" style="display:none"> #Yogurt</p>
+            <input type="text" placeholder="Credit Card Number"/>
+            <input type="text" placeholder="Address"/>
+            <a href="order.html"><button type="submit" class="checkout">Checkout</button></a>
           </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
   </body>
 </html>
